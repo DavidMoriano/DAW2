@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/estilos.css">
+    <title>Practica HTML</title>
+
+</head>
+
+<body>
+    <h1>Cosas que he aprendido</h1>
+    <h2>Guías de diseño</h2>
+
+    <ol>
+        <li>Colores</li>
+        <li>Tipografías</li>
+        <li>Iconos</li>
+    </ol>
+
+    <h1>HTML</h1>
+
+    <ul>
+        <li>Significa Hyper Text Markup Language</li>
+        <li>Un montón de etiquetas</li>
+        <ul>
+            <li>Boilerplate</li>
+            <ol>
+                <li>Doctype</li>
+                <li>HTML</li>
+                <li>Head</li>
+                <ol>
+                    <li>Title</li>
+                </ol>
+                <li>Body</li>
+                <ul>
+                    <li>Headings</li>
+                    <li>Paragraph</li>
+                    <li>em</li>
+                    <li>strong</li>
+                </ul>
+            </ol>
+        </ul>
+    </ul>
+
+    <h1>Equipos de futbol que nunca han bajado a seguda divison</h1>
+
+    <table>
+        <tr>
+            <th>Escudo</th>
+            <th>Nombre</th>
+            <th>Estadio</th>
+            <th>Mas informacion</th>
+        </tr>
+
+        <tr>
+            <td> <img src="./fotos/descarga.png" alt="EscudoAthleti"></td>
+            <td>Athletich Club</td>
+            <td>San Mamés</td>
+            <td> <a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjcsK_78vWPAxVA9gIHHXXgC0MQFnoECGkQAQ&url=https%3A%2F%2Fwww.athletic-club.eus%2F&usg=AOvVaw0Gb9yWkU_X49IRZldFsid7&opi=89978449">Más
+                    información</a> </td>
+        </tr>
+        <tr>
+            <td> <img src="./fotos/descarga.jpg" alt="EscudoRealMadrid"></td>
+            <td>Real Madrid CF</td>
+            <td>Santiago Bernabeu</td>
+            <td><a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi97tiB8_WPAxUf-QIHHfNkAUEQFnoECDwQAQ&url=https%3A%2F%2Fwww.realmadrid.com%2F&usg=AOvVaw3OjZdpkvHyndOAk-bz45pV&opi=89978449">Más
+                    información</a></td>
+        </tr>
+        <tr>
+            <td><img src="./fotos/descarga (1).png" alt="FutbolClubBarcelona"></td>
+            <td>FC Barcelona</td>
+            <td>Camp Nou</td>
+            <td><a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwioxoeK8_WPAxU_9wIHHfG2BMEQFnoECEcQAQ&url=https%3A%2F%2Fwww.fcbarcelona.es%2Fes%2F&usg=AOvVaw2ikee3gEBj_GMtNQY3q6z_&opi=89978449">Más
+                    información</a></td>
+        </tr>
+    </table>
+
+    <h1>Registro</h1>
+    <form action="https://webhook.site/fe74b48e-c2b9-4bc0-80a8-9e49cc119507" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Adrián" required>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="García" required>
+
+        <br>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label>
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="tu mail" required
+            pattern="[A-z0-9]+@[A-z0-9]+\.(es|com)">
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="tu password" pattern=[A-z0-9]{5,10}>
+        <br>
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento">
+        <br>
+        <label for="condicionesUso">Acepto las condiciones de uso</label>
+        <input type="checkbox" id="condicionesUso" name="condicionesUso" required>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+
+    <h1> Formulario usando Emmet </h1>
+    <form action="https://webhook.site/454d0959-1fa8-4cd7-b439-ee350fb80b5e" method="get">
+        <label for="nombre2">Nombre: </label>
+        <input type="text" id="nombre2" name="nombre2" placeholder="Adrián" required>
+        <br>
+        <label for="email2">Email: </label>
+        <input type="email2" name="email2" id="email2">
+        <br>
+        <label for="description">Descripción: </label>
+        <br>
+        <textarea name="Descripción" id="description"></textarea>
+        <br>
+        <label for="nacimiento2">Fecha de nacimiento: </label>
+        <input type="date" id="nacimiento2" name="nacimiento2">
+        <br>
+        <label for="color">Color: </label>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="ingles">Nivel de inglés: </label>
+        <input type="range" name="ingles" id="ingles">
+        <br>
+        <label for="añadirCurriculum">Añade tu curriculum: </label>
+        <br>
+        <input type="file" name="añadirCurriculum" id="añadirCurriculum">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+
+
+    <h1>Curriculum de Darth Vader</h1>
+    <p>Hola. Soy Darth Vader, bienvenido a mi sitio de HTML básico</p>
+    <h2>Información sobre mí</h2>
+
+    <img id="DarthVader" src="./fotos/DarthVader.webp" alt="Darth vader">
+
+    <table id="infoDarthVader">
+        <tr class="DarthVaderTable">
+            <th class="DarthVaderTable">Nombre</th>
+            <th class="DarthVaderTable">Género</th>
+            <th class="DarthVaderTable">Website</th>
+            <th class="DarthVaderTable">Profesión</th>
+        </tr>
+        <tr class="DarthVaderTable">
+            <td class="DarthVaderTable">Darth Vader</td>
+            <td class="DarthVaderTable">Hombre</td>
+            <td class="DarthVaderTable">https://es.wikipedia.org/wiki/Star_Wars</td>
+            <td class="DarthVaderTable">Lord Sith</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2> Hobbies </h2>
+    <p>Las actividades normales de cualquier Lord Sith</p>
+    <ul>
+        <li>Asfixiar a distancia</li>
+        <li>Meditar en cámaras de descomprensión</li>
+        <li>Supervisar la construcción de la Estrella de la Muerte</li>
+    </ul>
+    <hr>
+
+    <h2>Mándame un mail (si no quieres ser asfixiado)</h2>
+    <form action="" method="get">
+        <p>Introduce tus datos</p>
+        <label for="NombreDV">Nombre</label>
+        <input type="text" placeholder="darth vader" name="NombreDV" id="NombreDV">
+        <br>
+        <label for="emailDV">Email</label>
+        <input type="email" name="emailDV" id="emailDV">
+        <br>
+        <label for="mensajeDV">Mensaje</label>
+        <br>
+        <textarea name="mensajeDV" id="mensajeDV"></textarea>
+        <br>
+        <input type="submit" value="submit">
+        <hr>
+    </form>
+
+    <p> © 2025 - El imperio Galáctico </p>
+</body>
+
+</html>
