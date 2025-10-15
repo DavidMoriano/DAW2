@@ -8,16 +8,21 @@
     <title>Llamada AJAX</title>
 </head>
 
-<body onload="recuperarEmails()">
+<body onload="mostrarTareas()">
     <h1>Mostrar posts de un usuario</h1>
     <form action="#" id="form">
         <label for="titleId">Introduce el id del album: </label>
         <input type="text" id="titleId" size="2">
-        <br>
+        <br><br>
         <input type="button" value="Mostrar posts" onclick="recuperarDatos()">
-        <br><br><br>
+        <br><br>
+        <label for="tareaId">Introduce el id de la tarea: </label>
+        <input type="text" id="tareaId" size="2">
+        <input type="button" value="Mostrar tarea" onclick="recuperarTarea()">
+        <br><br>
         <input type="button" id="titleId" value="Mostrar respuesta" onclick="mostrarDatosConsolaRespuesta()">
-
+        <br><br>
+        <input type="button" value="Crear nueva tarea" onclick="crearTarea()">
     </form>
     <table>
         <tr>
