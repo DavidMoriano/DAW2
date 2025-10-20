@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Animales</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="menuDesplegable">
+        <select id="animales">
+            <option value="#">Selecciona un animal</option>
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Pez">Pez</option>
+        </select>
+    </div>
+    <button id="boton" onclick="solicitarInformacion()">Solicitar información</button>
+
+    <table> <!-- Tabla para mostrar la información -->
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Rasgos</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+<script src="./scripts/script.js"></script>
+</html>

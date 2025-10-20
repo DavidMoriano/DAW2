@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="contenedorInformacion">
+        <div class="opcion">
+            <input onclick="RecogerDatos()" type="radio" name="Animales" id="VerAnimales">
+            <label for="VerAnimales">Ver Información de todos los animales</label>
+        </div>
+        <div class="opcion">
+            <input onclick="CrearNuevoAnimal()" type="radio" name="Animales" id="NuevoAnimal">
+            <label for="NuevoAnimal">Introducir nuevo animal</label>
+        </div>
+    </div>
+    <table> <!-- Tabla para mostrar la información -->
+        <thead>
+            <tr>
+                <th>Animal</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+<script src="./scripts/script.js"></script>
+</html>

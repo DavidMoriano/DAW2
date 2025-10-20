@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Nuevo Cliente</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body onload="cargarClientes()">
+    <form id="formularioCliente" action="/submit" method="post">
+        <h2>Registro de Nuevo Cliente</h2>
+
+        <div class="campo">
+            <label for="nombre">Nombre de cliente</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="campo">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+
+        <div class="campo">
+            <label for="fechaNacimiento">Fecha de nacimiento (dd/mm/aaaa)</label>
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="dd/mm/aaaa" required>
+        </div>
+
+        <div class="campo">
+            <label>Sexo</label>
+            <div class="opcion">
+                <input type="radio" id="mujer" name="sexo" value="M" required>
+                <label for="mujer">Mujer</label>
+            </div>
+            <div class="opcion">
+                <input type="radio" id="hombre" name="sexo" value="H" required>
+                <label for="hombre">Hombre</label>
+            </div>
+        </div>
+
+        <div class="campo">
+            <label>Preferencias</label>
+            <div class="opcion">
+                <input type="checkbox" id="exterior" name="preferencias" value="ext">
+                <label for="exterior">Deportes de exterior</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" id="equipo" name="preferencias" value="equi">
+                <label for="equipo">Deportes de equipo</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" id="individuales" name="preferencias" value="indv">
+                <label for="individuales">Deportes individuales</label>
+            </div>
+            <div class="opcion">
+                <input type="checkbox" id="interior" name="preferencias" value="int">
+                <label for="interior">Deportes de interior</label>
+            </div>
+        </div>
+
+        <button type="button" class="info-button" onclick="registrarCliente()">Registrar Cliente</button>
+        <button type="button" class="info-button" onclick="borrarCliente()">Borrar Cliente</button>
+        <button type="button" class="info-button" onclick="actualizarCliente()">Actualizar Cliente</button>
+    </form>
+
+</body>
+<script src="./scripts/script.js"></script>
+</html>
